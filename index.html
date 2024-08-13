@@ -3,71 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Dev Tasks at Gosub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
+        
         :root{
-            --bckgrdColor: #012e2e;
+            --backgroundColor: #ffffff;
         }
         body{
-            background-color: var(--bckgrdColor);
+            background-color: var(--backgroundColor);
             display: flex;
             justify-content: center;
             align-items: center;
+            color: #2e2e2e;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.9rem;
         }
-        button{
-            padding: 10px 30px;
-            background-color: var(--bckgrdColor);
-            color: var(--bckgrdColor);
-            border-radius: 5px;
-            border: none;
-            font-size: 0.8rem;
-
+        .Reciept{
+            width: 500px;
+            height: auto;
+            background-color: #ececec;
+            margin: 20px;
+            padding: 10px 40px;
+            border-radius: 20px;
+            color: #2e2e2e;
         }
-        hr{
-            border-bottom: 1px solid var(--bckgrdColor);
-            border-top: 0px solid var(--bckgrdColor);
+        .capBox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0px;
         }
-        button a{
-            text-decoration: none;
-            color: aqua;
+        .itemBox{
+            display: grid;
+            align-items: center;
         }
-        .GosubTasks{
-            width: 600px;
-            background-color: aqua;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 10px;
-        }
-        .tasksItems{
+        .notecContainer{
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+        .notecContainer div:nth-child(1){
+            margin-left: -50px;
+        }
+        .notecContainer div:nth-child(2){
+            border-top: 2px dotted #858585;
+            width: 100%;
+            height: 1px;
+        }
+        .notecContainer div:nth-child(3){
+            margin-right: -50px;
+        }
+        .notch{
+            width: 20px;
+            height: 20px;
+            background-color: var(--backgroundColor);
+            border-radius: 50%;
+            position: relative;
+
+        }
+        hr:nth-child(1){
+            border-top: 2px dotted #2e2e2e;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            margin: 10px 0px;
+        }
+        .items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -15px;
+        }
+        p:nth-child(2){
+            /* color: red; */
+            text-align: left;
+            text-indent: right;
+        }
+
     </style>
+    <title>Electricity Receipt</title>
 </head>
 <body>
-    <div class="GosubTasks">
-        <div class="tasksHeader">
-            <h1>Hello world!</h1>
-            <h2>This page contains all the web development tasks and projects assigned by Gosub Limited, <i> primarily for easy navigation across the tasks.</i></h2>
-        </div>
-        <hr>
-        <div class="TasksBody">
-            <div class="tasksItems">
-                <h3>Gosub.ng Landing Page</h3>
-                <button><a href="https://adamsonoladipupo.github.io/visualdesigner/index.html">Enter</a></button>
-            </div>
-            <div class="tasksItems">
-                <h3>Bill Receipt</h3>
-                <button><a href="">Enter</a></button>
+        <div class="Reciept">
+            <div class="capBox">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="30px" height="30px"><path fill="#ff8100"  d="M36,1.74V0H17.65A18,18,0,1,0,32.81,7.84,7.41,7.41,0,0,0,36,1.74ZM18,26.67A8.67,8.67,0,1,1,26.63,18,8.67,8.67,0,0,1,18,26.67Z"/><ellipse fill="#ff8100" cx="17.97" cy="18" rx="3.8" ry="3.81"/></svg>
+                </div>
+                <h3 style="color: #2e2e2e;">Transaction Details</h3>
             </div>
 
+            
+            <div style="margin-bottom: 20px;" class="hrTop">
+                
+                <div class="notecContainer">
+                    <div class="notch"></div>
+                    <div>
+                    </div>
+                    <div class="notch"></div>
+                </div>
+            </div>
 
-
+            <div class="itemBox">
+                <div class="items">
+                    <p>Service</p>
+                    <p>Electricity</p>
+                </div>
+                <div class="items">
+                    <p>DISCO</p>
+                    <p>BEDC</p>
+                </div>
+                <div class="items">
+                    <p>Meter No:</p>
+                    <p>1223334444</p>
+                </div>
+                <div class="items">
+                    <p>Meter Type</p>
+                    <p>PREPAID</p>
+                </div>
+                <div class="items">
+                    <p>Token</p>
+                    <p>34456374547</p>
+                </div>
+                <div class="items">
+                    <p>Token</p>
+                    <p>12.35KWH</p>
+                </div>
+                <div class="items">
+                    <p>Customers Address</p>
+                    <p>1 Akintola Street</p>
+                </div>
+                <div class="items">
+                    <p>Transfer_ref</p>
+                    <p>djjhsvkvjj</p>
+                </div>
+                <div class="items">
+                    <p>Date</p>
+                    <p>25th August 2023</p>
+                </div>
+                <div>
+                    <hr>
+                </div>
+                <div class="items">
+                    <p>Amount</p>
+                    <p><strong>₦15,000.00</strong></p>
+                </div>
+                <div style="margin-top: -10px;">
+                    <hr>
+                </div>
+            </div>
+            <div style="text-align: center;"><p>Powered by Gosub Limited (RC1738098)</p></div>
+            
         </div>
-        <hr>
-        <p style="text-align: center;">Designed by Abdulwahab Adamson</p>
-    </div>
-
+        
+        
 </body>
 </html>
